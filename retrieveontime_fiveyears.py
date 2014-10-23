@@ -11,7 +11,7 @@ currentmonth = now.month
 # handle
 testfile = urllib.URLopener()
 
-def getBTSfiles(currentmonth, currentyear):
+def getBTSfiles(currentmonth, currentyear + 1):
 	"""function to pull five years of files but skip current and future months and months prior
 	to five years to the month"""
 	for y in range(currentyear - 5, currentyear):
